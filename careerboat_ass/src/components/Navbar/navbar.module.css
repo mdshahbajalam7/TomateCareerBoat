@@ -1,0 +1,45 @@
+.Headers {
+  background-color: #f9f4f0;
+}
+
+.nabvar {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  /* border: 1px solid ; */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.container {
+  width: 35%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+.container .btn1 {
+  width: 110px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.container .btn2 {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+.container .btn2:hover {
+  background-color: rgb(254, 103, 103);
+}
+.container .btn1:hover {
+  border-color: rgb(254, 103, 103);
+  color: rgb(254, 103, 103);
+}

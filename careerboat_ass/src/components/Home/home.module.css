@@ -1,0 +1,47 @@
+
+
+  .maindiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .maindiv div {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 550px;
+    padding: 10px;
+  }
+  
+  .textdiv h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+  .textdiv p {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .textdiv .btn3 {
+    margin-top: 40px;
+    width: 60%;
+    height: 60px;
+    font-size: 27px;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    border: none;
+  }
+  .textdiv h3{
+      margin-top: 30px;
+  }
+  .imges img{
+      height: 490px;
+  }
+  .textdiv .btn3:hover {
+    background-color: rgb(254, 103, 103);
+  }
