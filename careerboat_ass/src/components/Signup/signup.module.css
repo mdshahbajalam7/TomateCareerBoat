@@ -37,13 +37,10 @@
 }
 .Signup div {
   width: calc(85%);
-  border: 1px solid;
   margin-left: 15%;
 }
 .nav {
-  border: 1px solid;
   padding: 20px;
-  border: 1px solid red;
   /* display: flex;
     justify-content: space-between; */
 }
@@ -58,13 +55,75 @@
   font-weight: 500;
   margin-top: 10px;
 }
- .btn4:hover {
-    border-color: rgb(254, 103, 103);
-    color: rgb(254, 103, 103);
-  }
-  .form{
-    width: 100%;
-    border: 1px saddlebrown solid;
-    /* margin-to; */
-    /* theme.spacing(3) */
-  }
+.btn4:hover {
+  border-color: rgb(254, 103, 103);
+  color: rgb(254, 103, 103);
+}
+.form {
+  width: 100%;
+  /* theme.spacing(3) */
+}
+.gogglelognin {
+  width: 30%;
+  height: 40px;
+  /* display: flex;
+    justify-content: space-between; */
+}
+.btn5 {
+  width: 35%;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: -0px;
+  background-color: white;
+}
+.btn6 {
+  margin-left: 50px;
+  width: 34%;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: white;
+}
+.form {
+  margin-top: 40px;
+  /* padding: 20px; */
+}
+.label {
+  position: relative;
+  display: inline;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+.inputtag{
+  width: 40%;
+  height: 40px;
+  border-radius:5px ;
+  font-weight: 500;
+  font-size: 20px;
+}
+.email{
+  margin-top: 40px;
+  width: 89%;
+  height: 40px;
+  border-radius:5px ;
+  font-weight: 500;
+  font-size: 20px;
+}
+.password{
+  margin-top: 40px;
+  width: 89%;
+  height: 40px;
+  border-radius:5px ;
+  font-weight: 500;
+  font-size: 20px;
+}
+.submit{
+  margin-top: 40px;
+  width: 89%;
+  height: 40px;
+  border-radius:5px ;
+  font-weight: 500;
+  font-size: 20px;
+}

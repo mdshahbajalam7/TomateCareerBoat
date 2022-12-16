@@ -15,7 +15,7 @@ function Navbar() {
         <div className={styles.container}>
           <h4>About</h4>
           <h4>Pricing</h4>
-          <button className={styles.btn1}>Login</button>
+          <button className={styles.btn1} onClick={()=>navigate("/login")}>Login</button>
           <button className={styles.btn2} onClick={() => navigate("/Signup")}>
             Sign up Free
           </button>

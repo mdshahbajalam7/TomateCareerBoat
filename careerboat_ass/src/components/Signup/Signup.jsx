@@ -1,24 +1,61 @@
-import { Avatar, Grid, Input } from "@mui/material";
+import { Avatar } from "@mui/material";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { linkedinurl } from "../imageurl/imageurl";
 import styles from "./signup.module.css";
 function Signup() {
-    const handleChange = ()=>{
-
-    }
+  const navigate = useNavigate();
+  const handleChange = () => {};
   return (
     <div className={styles.container}>
       <div className={styles.Signup}>
         <div className={styles.nav}>
           <img src="https://topmate.io/topmate-light.svg" alt="" />
-          <button className={styles.btn4}>Lognin</button>
-          {/* <div> */}
-            <form className={styles.form}>
-                <span>First Name</span>
-                <br />
-                <input type="text" name="" id="" />
-                <input type="text" name="" id="" />
-            
-            </form>
+          <button className={styles.btn4} onClick={()=>navigate("/login")}>Lognin</button>
+          <h1>Welcome to topmate</h1>
+          {/* <div className={styles.formdiv}> */}
+          <button className={styles.btn5}>Google</button>
+          <button className={styles.btn6}>linkedin</button>
+          <hr />
+          <form className={styles.form}>
+            <input
+              className={styles.inputtag}
+              type="text"
+              name="firstname"
+              placeholder="firstName"
+            />
+            <input
+              className={styles.inputtag}
+              style={{ marginLeft: "40px" }}
+              type="text"
+              name="lastname"
+              placeholder="LastName"
+              required
+            />
+            <br />
+            <input
+              className={styles.email}
+              type="text"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <br />
+            <input
+              className={styles.password}
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <br />
+            <input
+              className={styles.submit}
+              type="submit"
+              value="Get Started"
+            />
+          </form>
           {/* </div> */}
         </div>
       </div>
