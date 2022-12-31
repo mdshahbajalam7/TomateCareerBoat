@@ -5,7 +5,7 @@
 .nabvar {
   width: 80%;
   margin: auto;
-  margin-top: 15px;
+  /* margin-top: 20px; */
   /* border: 1px solid ; */
   display: flex;
   justify-content: space-between;
@@ -16,6 +16,9 @@
   /* border: 1px solid; */
   display: flex;
   justify-content: space-between;
+}
+.container h4{
+  margin-top: 20px;
 }
 .container .btn1 {
   width: 110px;

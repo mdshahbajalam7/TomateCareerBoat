@@ -1,30 +1,51 @@
-import { Avatar } from "@mui/material";
+import { Avatar, Input, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { linkedinurl } from "../imageurl/imageurl";
+// import { linkedinurl } from "../imageurl/imageurl";
 import styles from "./signup.module.css";
+let signuplocal = JSON.parse(localStorage.getItem("signupdata"))
 function Signup() {
   const navigate = useNavigate();
-  const handleChange = () => {};
+  const [signupdata, setsignupdata] = useState({});
+  const handleChange = (e) => {
+    const inputName = e.target.name;
+    setsignupdata({
+      ...signupdata,
+      [inputName]: e.target.value,
+    });
+  };
+  const handlesubmit = (e) => {
+    e.preventDefault()
+    console.log(signupdata);
+    // signuplocal.push(signupdata)
+    localStorage.setItem("signupdata",JSON.stringify(signupdata))
+    navigate("/login")
+  };
   return (
     <div className={styles.container}>
       <div className={styles.Signup}>
         <div className={styles.nav}>
           <img src="https://topmate.io/topmate-light.svg" alt="" />
-          <button className={styles.btn4} onClick={()=>navigate("/login")}>Lognin</button>
+          <button className={styles.btn4} onClick={() => navigate("/login")}>
+            Lognin
+          </button>
           <h1>Welcome to topmate</h1>
           {/* <div className={styles.formdiv}> */}
           <button className={styles.btn5}>Google</button>
           <button className={styles.btn6}>linkedin</button>
-          <hr />
-          <form className={styles.form}>
+          <hr style={{ marginTop: "10px", width: "90%" }} />
+          <form onSubmit={handlesubmit} className={styles.form}>
+            <Typography>First Name</Typography>
             <input
               className={styles.inputtag}
               type="text"
               name="firstname"
-              placeholder="firstName"
+              placeholder="FirstName"
+              onChange={handleChange}
             />
+            {/* <Typography>Last Name */}
             <input
+              onChange={handleChange}
               className={styles.inputtag}
               style={{ marginLeft: "40px" }}
               type="text"
@@ -34,6 +55,7 @@ function Signup() {
             />
             <br />
             <input
+              onChange={handleChange}
               className={styles.email}
               type="text"
               name="email"
@@ -43,6 +65,7 @@ function Signup() {
 
             <br />
             <input
+              onChange={handleChange}
               className={styles.password}
               type="password"
               name="password"

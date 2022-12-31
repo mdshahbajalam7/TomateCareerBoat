@@ -9,14 +9,15 @@
 
 .landingpage .containerdiv{
     width: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* height: 30px; */
+    padding: 20px;
 }
 .slider{
     width: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #f9f4f0;
-    height: 300px;
+    height: 730px;
 }
 .stack{
     padding: 10px;
@@ -31,4 +32,31 @@
     margin-top: 30px;
     font-size:20px ;
     font-weight: 400;
+    border-radius: 10px;
+    border: none;
+}
+.profilesname{
+    margin-left: 60px;
+    border: 1px solid;
+    margin-top: -35px;
+}
+.homediv{
+    padding: 10px;
+    margin-top: 8px;
+}
+span{
+    /* border: 1px solid ; */
+    font-size: 25px;
+    /* margin-top: 30px; */
+    cursor: pointer;
+    font-weight: 300;
+    margin-left: 10px;
+    margin: 13px 13px;
+}
+.allhovers:hover{
+    background-color: #FFFFFF;
+    width: 80%;
+    /* padding: 2px;/ */
+    border-radius: 10px;
+
 }

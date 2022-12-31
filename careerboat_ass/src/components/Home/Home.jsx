@@ -23,7 +23,7 @@ function Home() {
 
         <h3>Join 1000+ creators conducting 1:1 sessions</h3>
         <Stack
-          style={{ marginTop: "-28px", marginLeft: "-20px", height: "40px" }}
+          style={{ marginTop: "-20px", marginLeft: "-20px", height: "40px" }}
           direction="row"
           // spacing={2}
         >
